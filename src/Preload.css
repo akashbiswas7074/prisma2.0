@@ -1,0 +1,15 @@
+
+.preload {
+    opacity: 1;
+    transform: scale(1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+   
+  }
+  .back{
+    overflow: hidden;
+  }
