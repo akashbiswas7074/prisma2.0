@@ -1,11 +1,11 @@
-import { useState } from "react";
-import CloudAnimation from "./CloudAnimation";
-import FireflyCanvas from "./FireFlies";
+// import { useState } from "react";
+// import CloudAnimation from "./CloudAnimation";
+// import FireflyCanvas from "./FireFlies";
 import { motion } from "framer-motion";
 import DemoBook from "./Mag24";
 
 const MagazinePage2024 = () => {
-  const [cloudAnim, setCloudAnim] = useState(false);
+  // const [cloudAnim, setCloudAnim] = useState(false);
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center relative bg-cover bg-center bg-no-repeat bg-[url('/background-mobile.png')] md:bg-[url('/Artboard 1.png')] overflow-hidden">
       {/* Header Section */}

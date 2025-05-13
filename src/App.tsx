@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Mag from "./components/Mag";
 import useImagePreloader from "./utils/hooks/ImagePreloader";
 import PreloadingpageCopy from "./Preloadingpage copy";
-import MagazinePage2023 from "./components/MagazinePage2023";
+// import MagazinePage2023 from "./components/MagazinePage2023";
 import MagazinePage2024 from "./components/MagazinePage2024";
 // import Preloadingpage from "./Preloadingpage";
 function App() {
@@ -28,7 +28,7 @@ function App() {
           <Route path="/" element={isLoading ? <PreloadingpageCopy/> : <Mag />} />
           {/* <Route path="/" element={isLoading ? <PreloadingpageCopy/> : <Mag />} /> */}
           {/* <Route path="/" element={<Mag />} /> */}
-          <Route path="/magazineview2023" element={<MagazinePage2023 />} />
+          {/* <Route path="/magazineview2023" element={<MagazinePage2023 />} /> */}
           <Route path="/magazineview2024" element={<MagazinePage2024 />} />
         </Routes>
       </Router>

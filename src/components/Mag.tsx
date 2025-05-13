@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./Mag.scss";
-import BhorAnimation from "./BhorAnimation copy";
-import useResponsiveScrollRatio from "../utils/hooks/parallaxRatio";
+// import BhorAnimation from "./BhorAnimation copy";
+// import useResponsiveScrollRatio from "../utils/hooks/parallaxRatio";
 import { useNavigate } from "react-router-dom";
-import SecondSection from "./SecondSection"; // Added import for SecondSection
+// import SecondSection from "./SecondSection"; // Added import for SecondSection
 
 const Mag = () => {
-  const { smallScreen } = useResponsiveScrollRatio();
-  const [allAnimationEnd, setAllAnimationEnd] = useState(true);
-  const [_bhorEnded, setBhorEnded] = useState(false);
-  const [dwnldIsClicked, setDwnldIsClicked] = useState(false); // Restored state
-  const [magNo, setMagNo] = useState(0); // Restored state
+  // const { smallScreen } = useResponsiveScrollRatio();
+  // const [allAnimationEnd, setAllAnimationEnd] = useState(true);
+  // const [_bhorEnded, setBhorEnded] = useState(false);
+  // const [dwnldIsClicked, setDwnldIsClicked] = useState(false); // Restored state
+  // const [magNo, setMagNo] = useState(0); // Restored state
   const navigate = useNavigate();
 
   useEffect(() => {

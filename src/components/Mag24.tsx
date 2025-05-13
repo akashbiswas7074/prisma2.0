@@ -4,23 +4,23 @@ import Zoom from 'react-medium-image-zoom';
 import { CoverPage, CoverBack, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41, p42,} from '../imports/Bhor-24';  // Import images
 import 'react-medium-image-zoom/dist/styles.css';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import pdfUrl from "/prisma2 (1).pdf"; // Import the PDF
 // import QR from "@assets/qr.png";
-// import pdf from "@assets/Bhor24/bhor24.pdf";
+// import pdf from "@assets/Bhor24/bhor24.pdf"; // This line can be removed or kept if you plan to use it later
 
 // Define types for props
 interface PageCoverProps {
   children: React.ReactNode;
 }
 
-// const onButtonClick = () => {
-//   // const pdfUrl = pdf;
-//   const link = document.createElement("a");
-//   link.href = pdfUrl;
-//   link.download = "Bhor24.pdf"; // specify the filename
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
-// };
+const onButtonClick = () => {
+  const link = document.createElement("a");
+  link.href = pdfUrl; // Use the imported pdfUrl
+  link.download = "CSE_Magazine_2025.pdf"; // specify the filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const PageCover = React.forwardRef<HTMLDivElement, PageCoverProps>((props, ref) => {
   return (
@@ -208,16 +208,16 @@ class DemoBook extends Component<{}, DemoBookState> {
                 )}
               </Page>
             ))}
-            <PageCover><div className="flex flex-col justify-between items-center ">
-            <h3 className="text-center text-2xl font-bold mt-4 ">Thank you for watching</h3>
-  <h3 className="text-xl mt-2 ">Get your e-copy</h3>
+            <PageCover><div className="flex flex-col justify-between items-center p-4"> {/* Added padding */}
+            <h3 className="text-center text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-4">Thank you for watching</h3>
+  <h3 className="text-md sm:text-lg mt-1 sm:mt-2">Get your e-copy</h3>
   
-  {/* <button
-    className="mt-4 font-bold bg-brown-600 text-brown-700 text-lg px-8 py-2 border border-brown-600 hover:bg-brown-700 hover:border-brown-700 transition duration-300"
+  <button
+    className="mt-4 font-bold bg-yellow-500 text-gray-800 text-md sm:text-lg px-6 sm:px-8 py-2 border border-yellow-600 hover:bg-yellow-600 hover:border-yellow-700 transition duration-300 rounded-md shadow-md"
     onClick={onButtonClick}
   >
-    Download
-  </button> */}
+    Download PDF
+  </button>
   
   {/* QR Code Image */}
   <div className="mt-4">
