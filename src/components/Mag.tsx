@@ -51,7 +51,7 @@ const Mag = () => {
         {/* Main Content Area: Left (Prisma) and Right (Book and Cloth) */}
         <div className="relative z-10 flex flex-col md:flex-row w-full flex-grow items-stretch justify-center px-4 mt-32 md:mt-36 mb-12">
           {/* Left Pane: Prisma 2.0 */}
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-white p-4 text-center mb-8 md:mb-0 slide-in-left">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-white p-4 text-center -mt-8 mb-8 md:mb-0 slide-in-left md:gap-8">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] font-bold mb-2 sm:mb-3 leading-tight uppercase">Prisma 2.0</h1>
             <p className="text-sm sm:text-md md:text-lg lg:text-xl max-w-md md:max-w-lg">
               The annual technical magazine by the Department of Computer Science and Engineering, KGEC.

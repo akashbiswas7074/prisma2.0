@@ -208,31 +208,22 @@ class DemoBook extends Component<{}, DemoBookState> {
                 )}
               </Page>
             ))}
-            <PageCover><div className="flex flex-col justify-between items-center p-4"> {/* Added padding */}
-            <h3 className="text-center text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-4">Thank you for watching</h3>
-  <h3 className="text-md sm:text-lg mt-1 sm:mt-2">Get your e-copy</h3>
-  
-  <button
-    className="mt-4 font-bold bg-yellow-500 text-gray-800 text-md sm:text-lg px-6 sm:px-8 py-2 border border-yellow-600 hover:bg-yellow-600 hover:border-yellow-700 transition duration-300 rounded-md shadow-md"
-    onClick={onButtonClick}
-  >
-    Download PDF
-  </button>
-  
-  {/* QR Code Image */}
-  {/* <div className="mt-4">
-    <img
-      // src={QR}// Replace with actual QR code image path
-      alt="QR Code"
-      className="w-32 h-32 mt-4" // Adjust size as necessary
-    />
-  </div>
-
-  {/* Follow us on Facebook text */}
-  {/* <div className=" text-lg mt-2">
-    <p>Follow us on our <a href="https://www.facebook.com/KGECSC" className="text-brown-600 hover:text-brown-800" target="_blank" rel="noopener noreferrer">Facebook page</a></p>
-  </div> */} 
-</div></PageCover>
+            <PageCover>
+              <div className="flex flex-col justify-between items-center p-4">
+                <div className="mt-0 mb-4 text-center">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold">Prisma 2.0</h2>
+                  <p className="text-md sm:text-lg mt-1">The annual technical magazine by the Department of Computer Science and Engineering, KGEC.</p>
+                </div>
+                <h3 className="text-center text-lg sm:text-xl md:text-2xl font-bold mt-2 sm:mt-4">Thank you for watching</h3>
+                <h3 className="text-md sm:text-lg mt-1 sm:mt-2">Get your e-copy</h3>
+                <button
+                  className="mt-4 font-bold bg-yellow-500 text-gray-800 text-md sm:text-lg px-6 sm:px-8 py-2 border border-yellow-600 hover:bg-yellow-600 hover:border-yellow-700 transition duration-300 rounded-md shadow-md"
+                  onClick={onButtonClick}
+                >
+                  Download PDF
+                </button>
+              </div>
+            </PageCover>
           </HTMLFlipBook>
 
           <div className="container">
