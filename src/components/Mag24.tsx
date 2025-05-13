@@ -220,7 +220,7 @@ class DemoBook extends Component<{}, DemoBookState> {
   </button>
   
   {/* QR Code Image */}
-  <div className="mt-4">
+  {/* <div className="mt-4">
     <img
       // src={QR}// Replace with actual QR code image path
       alt="QR Code"
@@ -229,9 +229,9 @@ class DemoBook extends Component<{}, DemoBookState> {
   </div>
 
   {/* Follow us on Facebook text */}
-  <div className=" text-lg mt-2">
+  {/* <div className=" text-lg mt-2">
     <p>Follow us on our <a href="https://www.facebook.com/KGECSC" className="text-brown-600 hover:text-brown-800" target="_blank" rel="noopener noreferrer">Facebook page</a></p>
-  </div>
+  </div> */} 
 </div></PageCover>
           </HTMLFlipBook>
 
