@@ -1,7 +1,7 @@
 import HTMLFlipBook from "react-pageflip";
 import React, { Component, createRef } from "react";
 import Zoom from 'react-medium-image-zoom';
-import { CoverPage, CoverBack, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41, p42,} from '../imports/Bhor-24';  // Import images
+import { CoverPage, CoverBack, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41,} from '../imports/Bhor-24';  // Import images
 import 'react-medium-image-zoom/dist/styles.css';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import pdfUrl from "/prisma2 (1).pdf"; // Import the PDF
@@ -140,7 +140,7 @@ class DemoBook extends Component<{}, DemoBookState> {
       { type: 'poem', content: p39, number: 39 },
       { type: 'poem', content: p40, number: 40 },
       { type: 'poem', content: p41, number: 41 },
-      { type: 'poem', content: p42, number: 42 },
+      // { type: 'poem', content: p42, number: 42 },
       { type: 'cover', content: CoverBack, number: 43 }  // Last cover
     ];
     
